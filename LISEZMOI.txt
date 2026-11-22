@@ -1,0 +1,15 @@
+Picto Voix 0.5.1 — installation
+
+1. Copier tout le contenu de ce dossier sur un hébergement en HTTPS
+   (ex. un sous-domaine : pictovoix.gkup.link). Aucun PHP ni base de données requis.
+2. Ouvrir l'adresse sur le téléphone ou la tablette :
+   - Android (Chrome) : menu ⋮ > « Ajouter à l'écran d'accueil » / « Installer l'application ».
+   - iPhone / iPad (Safari) : Partager > « Sur l'écran d'accueil ».
+   - PC (Chrome / Edge) : icône d'installation dans la barre d'adresse.
+3. L'appli fonctionne ensuite hors ligne. La recherche de pictogrammes ARASAAC demande internet.
+
+Mode parent : toucher le cadenas puis taper le code (1981 par défaut, modifiable dans Réglages).
+Copier sur un autre appareil : Réglages > Exporter une sauvegarde, puis Importer sur l'autre appareil.
+
+Pictogrammes : auteur Sergio Palao, origine ARASAAC (arasaac.org), licence CC BY-NC-SA,
+propriété du Gouvernement d'Aragon.

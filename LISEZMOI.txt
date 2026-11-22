@@ -1,4 +1,4 @@
-Picto Voix 0.6.1 — installation
+Picto Voix 0.6.2 — installation
 
 1. Copier tout le contenu de ce dossier sur un hébergement en HTTPS
    (ex. un sous-domaine : pictovoix.gkup.link). Aucun PHP ni base de données requis.

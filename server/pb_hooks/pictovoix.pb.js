@@ -20,7 +20,14 @@ onBootstrap((e) => {
   const s = e.app.settings();
   let changed = false;
   if (!s.backups.cron) { s.backups.cron = "30 3 * * *"; s.backups.cronMaxKeep = 14; changed = true; }
-  if (!s.rateLimits.enabled) { s.rateLimits.enabled = true; changed = true; }
+  // Limites : strictes sur les mots de passe, larges pour l'envoi des pictos et photos (première synchro)
+  unmarshal({ rateLimits: { enabled: true, rules: [
+    { label: "*:auth", maxRequests: 5, duration: 3 },
+    { label: "*:create", maxRequests: 400, duration: 10 },
+    { label: "/api/batch", maxRequests: 10, duration: 1 },
+    { label: "/api/", maxRequests: 1000, duration: 10 },
+  ] } }, s);
+  changed = true;
   if (s.meta.appName !== "Picto Voix") { s.meta.appName = "Picto Voix"; changed = true; }
   if (changed) e.app.save(s);
 });
